@@ -1,0 +1,79 @@
+<!-- -->
+<!-- Haciendo referencia a mi archivo JavaScript-->
+<!-- Defino el tipo de documento-->
+<!DOCTYPE html>
+<!-- Lenguaje regional-->
+<html lang="es">
+    <!-- Cabecera-->
+    <head>
+      <meta http-equiv="Expires" content="0">
+      <meta http-equiv="Last-Modified" content="0">
+      <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+      <meta http-equiv="Pragma" content="no-cache">
+        <!-- Referencias de hoja de estilo -->
+        <!-- Codificacion de caracteres para que se entiendan acentos-->
+        <meta charset="UTF-8">
+        <!-- Esto se mostrara en pestaña del navegador -->
+        <!-- Estilos -->
+        <!-- Usar estilos en html sin necesidad de  -->
+        <style type ="text/css">
+        .alert{
+          padding: 20px;
+          background-color: #f44336;
+          color: white;
+          opacity: 1;
+          transition: opacity 0.6s;
+          margin-bottom: 15px;
+        }
+
+        <!-- Colores para las etiquetas  -->
+
+        .alert.sucess{background-color: #4caf50;}
+        .alert.info{background-color: #2196f3;}
+        .alert.warning{background-color: #ff9800;}
+
+        </style>
+        <title>Mi primer app Web</title>
+    </head>
+
+    <body>
+        <!--                    BLOQUE DE BOTONES                                  -->
+        <!-- Este boton llama a la funcion miFuncion de mi archivo JS-->
+        <button type="button" id="mifuncion">Rompa aqui</button> <!-- oneclick es un evento-->
+        <!-- Este boton llama a la funcion bucles de mi archivo JS-->
+        <button type="button" id="bucles">Bucles</button> <!-- oneclick es un evento-->
+        <!-- Este boton llama a la funcion buclesWhile de mi archivo JS-->
+        <button type="button" id="while">Bucles While</button> <!-- oneclick es un evento-->
+        <!-- Este boton llama a la funcion buclesDoWhile de mi archivo JS-->
+        <button type="button" id="dowhile">Bucles DoWhile</button> <!-- oneclick es un evento-->
+        <!-- Este boton llama a la funcion operacionesAritmeticas de mi archivo JS-->
+        <button type="button" id="operArit">Operaciones Aritmeticas</button> <!-- oneclick es un evento-->
+        <!-- Este boton llama a la funcion operacionesLogicas de mi archivo JS-->
+        <button type="button" id="operLog">Operaciones Logicas</button> <!-- oneclick es un evento-->
+        <!-- Este boton llama a la funcion manejarArreglo de mi archivo JS-->
+        <button type="button" id="arreglos">Manejar Arreglos</button> <!-- oneclick es un evento-->
+        <!-- Este boton llama a la funcion misAlerts de mi archivo JS-->
+        <button type="button" id="misAlerts">Enviar alerta</button> <!-- oneclick es un evento-->
+        <!-- Este boton llama a la funcion manejarObjeto de mi archivo JS-->
+        <button type="button" id="objeto">Manejar Objeto</button> <!-- oneclick es un evento-->
+
+        <!-- Alertas personalizadas-->
+        <div class = "alert sucess">
+          <strong>Sucess!</strong>Indicates a successful or positive
+          <span class = "closebtn">&times;</span>
+        </div>
+          <div class = "alert info">
+            <strong>Info</strong>Info.
+            <span class = "closebtn">&times;</span>
+          </div>
+            <div class="alert warning">
+              <strong>Warning!</strong>Warning!
+              <span class="closebtn">&times;</span>
+            </div>
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/popper.js" type=""></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/demo01.js"></script>
+    </body>
+</html>
